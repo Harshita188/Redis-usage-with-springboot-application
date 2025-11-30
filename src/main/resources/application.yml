@@ -1,0 +1,25 @@
+# spring:
+#   cache:
+#     type: redis
+#     use-key-prefix: true
+#     key-prefix: ems
+#     cache-names: myCache  
+
+#   data:
+#     redis: 
+#       host: localhost
+#       port: 6379
+#       timeout: 6000s  
+spring:
+  cache:
+    type: redis
+    cache-names: employeeCache 
+    redis:
+      use-key-prefix: true
+      key-prefix: "local::"
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 6000s
+
